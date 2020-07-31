@@ -9,7 +9,8 @@ module SwaggerEngine
     end
 =end
     config.to_prepare do
-      Rails.application.config.assets.precompile += ['swagger_engine/print.css', 'swagger_engine/reset.css']
+      Rails.application.config.assets.precompile += ['swagger_engine/print.css', 'swagger_engine/reset.css', '*.ico',
+        '*.woff2', '*.eot', '*.woff', '*.ttf', '*.svg', '*.gif']
     end
 
   end
